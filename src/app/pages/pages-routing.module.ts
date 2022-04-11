@@ -9,9 +9,9 @@ import { ProductosComponent } from './productos/productos.component';
 const routes:Routes=[
   {path:'dashboard', component:PagesComponent,
   children:[
-    {path:'', component:DashboardComponent}, 
-    {path:'usuarios', component:UsuariosComponent},
-    {path:'productos', component:ProductosComponent}
+    {path:'', component:DashboardComponent, data:{titulo:'Dashboard'}}, 
+    {path:'usuarios', component:UsuariosComponent,data:{titulo:'Usuarios'}},
+    {path:'productos', component:ProductosComponent, data:{titulo:'Productos'}}
   ]
 }
 ]

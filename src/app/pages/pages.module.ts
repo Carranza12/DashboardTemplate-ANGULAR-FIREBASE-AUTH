@@ -24,7 +24,8 @@ import { SharedModule } from '../shared/shared.module';
   exports: [
     DashboardComponent,
     UsuariosComponent,
-    ProductosComponent
+    ProductosComponent,
+    
   ]
 })
 export class PagesModule { }
