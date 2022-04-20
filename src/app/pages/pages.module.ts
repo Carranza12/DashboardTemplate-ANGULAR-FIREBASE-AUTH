@@ -6,6 +6,7 @@ import { ProductosComponent } from './productos/productos.component';
 import { PagesComponent } from './pages.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
+import { ClientesComponent } from './clientes/clientes.component';
 
 
 
@@ -15,11 +16,13 @@ import { SharedModule } from '../shared/shared.module';
     UsuariosComponent,
     ProductosComponent,
     PagesComponent,
+    ClientesComponent,
   ],
   imports: [
     CommonModule,
     RouterModule,
-    SharedModule
+    SharedModule,
+    
   ],
   exports: [
     DashboardComponent,

@@ -7,6 +7,10 @@ import { AuthModule } from './auth/auth.module';
 
 import { NopageFoundComponent } from './nopage-found/nopage-found.component';
 import { PagesModule } from './pages/pages.module';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule} from '@angular/fire/compat/auth';
+import { environment } from '../environments/environment';
+
 
 @NgModule({
   declarations: [
@@ -19,6 +23,10 @@ import { PagesModule } from './pages/pages.module';
     AppRoutingModule,
     AuthModule,
     PagesModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule
+
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
