@@ -27,7 +27,8 @@ import { ClientesComponent } from './clientes/clientes.component';
   exports: [
     DashboardComponent,
     UsuariosComponent,
-    ProductosComponent
+    ProductosComponent,
+    
   ]
 })
 export class PagesModule { }

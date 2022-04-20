@@ -13,8 +13,12 @@ const routes:Routes=[
   children:[
     {path:'', component:DashboardComponent, data:{titulo:'Dashboard'}}, 
     {path:'usuarios', component:UsuariosComponent,data:{titulo:'Usuarios'}},
+<<<<<<< HEAD
     {path:'productos', component:ProductosComponent, data:{titulo:'Productos'}},
     {path:'clientes', component:ClientesComponent, data:{titulo:'Clientes'}}
+=======
+    {path:'productos', component:ProductosComponent, data:{titulo:'Productos'}}
+>>>>>>> 66a5c2a3eec430193dfd04dc24d553df249108c3
   ]
 }
 ]
