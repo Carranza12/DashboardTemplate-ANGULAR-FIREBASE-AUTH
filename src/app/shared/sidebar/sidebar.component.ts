@@ -1,13 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { SidebarService } from 'src/app/services/sidebar.service';
-<<<<<<< HEAD
 import { AuthService } from 'src/app/services/auth.service';
 
 
 declare var $:any;
-=======
->>>>>>> 66a5c2a3eec430193dfd04dc24d553df249108c3
+
 
 @Component({
   selector: 'app-sidebar',
@@ -15,19 +13,12 @@ declare var $:any;
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
-<<<<<<< HEAD
-
- menuItems?:any[];
- usuario:any;
- user:any;
- userImgGoogle:any;
-=======
   menuItems?:any[];
-  constructor(private sideBarServices: SidebarService, private router:Router) {
-    this.menuItems= this.sideBarServices.menu;
+  usuario:any;
+  user:any;
+  userImgGoogle:any;
   
-   } 
->>>>>>> 66a5c2a3eec430193dfd04dc24d553df249108c3
+
 
   constructor(private sideBarServices: SidebarService, private router:Router, private authSvc:AuthService) {
     this.menuItems= this.sideBarServices.menu;
@@ -40,9 +31,6 @@ export class SidebarComponent implements OnInit {
     $('[data-widget="treeview"]').Treeview('init');
    
    }
-
-  
-
 
    async obtenerUsuario(){
 
@@ -59,10 +47,6 @@ export class SidebarComponent implements OnInit {
 
   async logout(){
     await this.authSvc.logout(); 
-  }
-
-  logout(){
-  this.router.navigateByUrl('/login'); 
   }
 
 }
