@@ -1,0 +1,50 @@
+<div class="container">
+    <div>
+        <form [formGroup]="busqueda" >
+            <input type="text" class="form-control" placeholder="search a employee" (keypress)="submit()" formControlName="nombre">
+        </form>
+    </div>
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">name</th>
+                <th scope="col">status</th>
+                <th scope="col">gender</th>
+                <th scope="col">image</th>
+              </tr>
+            </thead>
+        
+            <tbody>
+               
+
+              
+                <tr *ngFor="let em of $empleados  | paginate:{id:'listing_pagination',
+                itemsPerPage:5, currentPage:page,totalItems:totalRecords}, "  >
+                    <th style="color: rgb(12, 95, 95);" scope="row">{{em.id}}</th>
+                    <td ><strong>{{em.name}}</strong></td>
+                    <td style="color:rgb(51, 204, 51)" *ngIf="em.status=='Alive'">{{em.status}}</td>
+                    <td style="color:red" *ngIf="em.status=='Dead'">{{em.status}}</td>
+                    <td style="color:rgb(48, 51, 37)" *ngIf="em.status=='unknown'">{{em.status}}</td>
+                    <td style="color:blue" *ngIf="em.gender=='Male'" >{{em.gender}}</td>
+                    <td style="color: blueviolet;"  *ngIf="em.gender=='Female'">{{em.gender}}</td>
+                    <td style="color: rgb(224, 90, 0);"  *ngIf="em.gender=='genderless'">{{em.gender}}</td>
+                    <td style="color: rgb(36, 36, 36);"  *ngIf="em.gender=='unknown'">{{em.gender}}</td>
+                    <td><img [src]="em.image" width="100px" alt=""></td>
+                  </tr>
+             
+
+             
+             
+            </tbody>
+    
+          </table>
+        
+ 
+  <pagination-controls id="listing_pagination" [maxSize]="5" [directionLinks]="true" (pageChange)="page = $event">
+
+  </pagination-controls>
+
+ 
+</div>

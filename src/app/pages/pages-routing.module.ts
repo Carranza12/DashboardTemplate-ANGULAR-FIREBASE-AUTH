@@ -6,6 +6,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { ProductosComponent } from './productos/productos.component';
 import { AuthGuard } from '../guards/auth.guard';
+import { EmpleadosComponent } from './empleados/empleados.component';
 
 
 const routes:Routes=[
@@ -13,7 +14,8 @@ const routes:Routes=[
   children:[
     {path:'', component:DashboardComponent, data:{titulo:'Dashboard'}}, 
     {path:'usuarios', component:UsuariosComponent,data:{titulo:'Usuarios'}},
-    {path:'productos', component:ProductosComponent, data:{titulo:'Productos'}}
+    {path:'productos', component:ProductosComponent, data:{titulo:'Productos'}},
+    {path:'empleados', component:EmpleadosComponent, data:{titulo:'empleados'}}
   ]
 }
 ]

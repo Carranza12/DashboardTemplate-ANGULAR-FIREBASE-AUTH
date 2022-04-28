@@ -4,14 +4,13 @@
 
 export const environment = {
   firebase: {
-    projectId: 'xxxxxxxxxxxxxxxx',
-    appId: 'xxxxxxxxxxxxxxxxxxxxxxx',
-    databaseURL: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-    storageBucket: 'xxxxxxxxxxxxxxxxxxxxxxxx',
-    locationId: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-    apiKey: 'xxxxxxxxxxxxxxxxxxxxxxxx',
-    authDomain: 'xxxxxxxxxxxxxxxxxxxxxxx',
-    messagingSenderId: 'xxxxxxxxxxxxxxxxxxxxxxxxxxx',
+    apiKey: "AIzaSyANpMxBgH10ikJDe318mSftB4_MAOQ59cg",
+    authDomain: "dashboardprueba-c61be.firebaseapp.com",
+    projectId: "dashboardprueba-c61be",
+    storageBucket: "dashboardprueba-c61be.appspot.com",
+    messagingSenderId: "1053432954499",
+    appId: "1:1053432954499:web:0734bb5eaac39e48ea65b6",
+    measurementId: "G-C60W4QHB1J"
   },
   production: false
 };

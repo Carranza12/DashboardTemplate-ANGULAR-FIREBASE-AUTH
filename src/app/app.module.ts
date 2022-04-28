@@ -10,7 +10,7 @@ import { PagesModule } from './pages/pages.module';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule} from '@angular/fire/compat/auth';
 import { environment } from '../environments/environment';
-
+import{HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -24,10 +24,10 @@ import { environment } from '../environments/environment';
     AuthModule,
     PagesModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule
-
-   
+    AngularFireAuthModule, 
+    HttpClientModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
