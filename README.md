@@ -1,27 +1,52 @@
-# ProyAdminlte3
+# SISTEMA PLANTILLA PARA CREAR DASHBOARD CON FIREBASE AUTH
+Hola, esta es una aplicacion con el marco de trabajo de Angular con firebase para la autenticacion con Google, donde se cuenta con un login y unos componentes protegidos por guards, para poder administrar datos confidenciales.
+<br>
+<br>
+# Configuracion del entorno de trabajo
+Para poder ejecutar este proyecto es necesario tener instalado:<br><br>
+- NodeJs - link de descarga: https://nodejs.org/es/<br>
+- Angular CLI - guia de instalacion : https://angular.io/cli <br>
+# Requisitos del proyecto: <br>
+- Node JS <br>
+- Angular CLI <br>
+# Clona el proyecto
+Es necesario clonar el repositorio con el siguiente comando:
+<br><br>
+```
+$ git clone https://github.com/Carranza12/DashboardTemplate-ANGULAR-FIREBASE-AUTH.git
+```
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.1.
+# Descarga las deendencias
+Accede a la raiz del proyecto y ejecuta el siguiente comando:
+<br><br>
+```
+$ npm i 
+```
 
-## Development server
+# Ejecuta el servidor local
+una vez ya instalado todo lo necesario y ya clonado el proyecto ejecuta el servidor con el siguiente comando:
+```
+$ ng serve
+```
+# Imagenes de la Aplicacion
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+A continuacion se muestran imagenes del proyecto:
 
-## Code scaffolding
+# LOGIN
+![Login](https://github.com/Carranza12/DashboardTemplate-ANGULAR-FIREBASE-AUTH/blob/main/src/assets/GITHUB/1.PNG)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Google Auth
+![Google Auth](https://github.com/Carranza12/DashboardTemplate-ANGULAR-FIREBASE-AUTH/blob/main/src/assets/GITHUB/2.PNG)
 
-## Build
+# Dashboard
+![Dashboard](https://github.com/Carranza12/DashboardTemplate-ANGULAR-FIREBASE-AUTH/blob/main/src/assets/GITHUB/3.PNG)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Sistema CRUD
+![Crud](https://github.com/Carranza12/DashboardTemplate-ANGULAR-FIREBASE-AUTH/blob/main/src/assets/GITHUB/5.PNG)
 
-## Running unit tests
+# Paginacion
+![Paginacion](https://github.com/Carranza12/DashboardTemplate-ANGULAR-FIREBASE-AUTH/blob/main/src/assets/GITHUB/6.PNG)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Notificaciones
+![Notificaciones](https://github.com/Carranza12/DashboardTemplate-ANGULAR-FIREBASE-AUTH/blob/main/src/assets/GITHUB/7.PNG)
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
